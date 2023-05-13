@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Close Open</title>
+</head>
+<body>
+    <button id="toggle-button">Open</button>
+  <script>
+    var toggleButton = document.getElementById("toggle-button");
+    function toggleButtonText() {
+      if (toggleButton.textContent === "Open") {
+        toggleButton.textContent = "Close";
+      } else {
+        toggleButton.textContent = "Open";
+      }
+    }
+    
+    toggleButton.addEventListener("click", toggleButtonText);
+  </script>
+</body>
+</html>
